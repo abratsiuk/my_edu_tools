@@ -1,4 +1,5 @@
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import Link from '@mui/material/Link';
 import {
     AppBar,
     Box,
@@ -78,12 +79,12 @@ export default function Layout() {
                         indicatorColor="secondary"
                     >
                         <Tab
-                            value="/word"
-                            label="word"
-                        />
-                        <Tab
                             value="/timer"
                             label="timer"
+                        />
+                        <Tab
+                            value="/word"
+                            label="word"
                         />
                     </Tabs>
                 </Toolbar>
@@ -121,7 +122,12 @@ export default function Layout() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            MyEduTools • Material layout
+                            <Link
+                                href="https://github.com/abratsiuk/my_edu_tools"
+                                target="_blank"
+                            >
+                                repo
+                            </Link>
                         </Typography>
                     </Box>
                 </Container>
