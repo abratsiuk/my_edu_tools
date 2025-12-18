@@ -76,7 +76,6 @@ export default function Layout() {
                         }}
                         textColor="inherit"
                         indicatorColor="secondary"
-                        sx={{ ml: 2 }}
                     >
                         <Tab
                             value="/word"
