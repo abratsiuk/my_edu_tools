@@ -1,6 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
-    Box,
     Button,
     Card,
     CardContent,
@@ -202,6 +201,7 @@ export default function TimerPage() {
     }
 
     function displayedSecondsForRow(r: Row): number {
+        void tick;
         if (!r.isRunning || !r.startedAtMs) {
             return r.seconds;
         }
