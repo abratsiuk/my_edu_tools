@@ -54,6 +54,25 @@ export default function WordPage() {
                         </CardContent>
                     </CardActionArea>
                 </Card>
+                <Card>
+                    <CardActionArea
+                        href={`https://tophonetics.com/totube/${encoded}/`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>
+                                ToPhonetics — Listen
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Pronunciation audio
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
 
                 <Card>
                     <CardActionArea
@@ -86,6 +105,25 @@ export default function WordPage() {
                                 color="text.secondary"
                             >
                                 IPA, meaning, category
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                <Card>
+                    <CardActionArea
+                        href={`https://tophonetics.com/?text=${encoded}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>
+                                ToPhonetics — IPA
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                IPA transcription
                             </Typography>
                         </CardContent>
                     </CardActionArea>

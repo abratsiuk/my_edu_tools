@@ -11,6 +11,16 @@ type LinkCard = { title: string; subtitle?: string; href: string };
 
 const cards: LinkCard[] = [
     {
+        title: 'Слепой набор - 2: основная позиция пальцев',
+        subtitle: 'Keyboard mastery tips (Portnov)',
+        href: 'https://www.youtube.com/watch?v=DVyWq5dS1-w',
+    },
+    {
+        title: 'Portnov — Keyboarding Russian & English',
+        subtitle: 'Keyboard mastery tips (Portnov)',
+        href: 'https://www.portnov.com/keyboarding-russian/',
+    },
+    {
         title: 'Typing Study — Touch Typing Lesson 1',
         subtitle: 'Interactive keyboard typing practice',
         href: 'https://www.typingstudy.com/lesson/1',
@@ -69,6 +79,11 @@ const cards: LinkCard[] = [
         title: 'PhoneticFanatic (YouTube)',
         subtitle: 'English pronunciation & phonetics',
         href: 'https://www.youtube.com/@PhoneticFanatic',
+    },
+    {
+        title: 'BBC Learning English — Pronunciation Tips',
+        subtitle: 'YouTube playlist · English pronunciation',
+        href: 'https://www.youtube.com/playlist?list=PLD6B222E02447DC07',
     },
     {
         title: 'Reading & Pronunciation Practice (YouTube)',

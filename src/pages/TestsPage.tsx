@@ -33,6 +33,11 @@ const cards: LinkCard[] = [
         subtitle: 'Translation and pronunciation',
         href: 'https://englishvoyage.com/irregular-verbs',
     },
+    {
+        title: 'How to Make Stress Your Friend (TED)',
+        subtitle: 'Kelly McGonigal · English with Russian subtitles',
+        href: 'https://www.ted.com/talks/kelly_mcgonigal_how_to_make_stress_your_friend?language=ru',
+    },
 ];
 
 export default function TestsPage() {
