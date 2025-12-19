@@ -13,6 +13,10 @@ export default function WordPage() {
     const [word, setWord] = useState('compulsory');
 
     const encoded = useMemo(() => encodeURIComponent(word.trim()), [word]);
+    const slug = useMemo(
+        () => word.trim().toLowerCase().replace(/\s+/g, '-'),
+        [word]
+    );
 
     return (
         <Stack spacing={3}>
@@ -53,6 +57,24 @@ export default function WordPage() {
 
                 <Card>
                     <CardActionArea
+                        href="https://www.youtube.com/watch?v=u99wAoBjDvQ&list=PLQMqUlV2_B8ngL_PaT9UFsd0-PvnrpZGC&index=3"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>Base video</Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Find the word in transcript
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+                <Card>
+                    <CardActionArea
                         href={`https://dictionary.cambridge.org/us/dictionary/english/${encoded}`}
                         target="_blank"
                         rel="noreferrer"
@@ -71,17 +93,149 @@ export default function WordPage() {
 
                 <Card>
                     <CardActionArea
-                        href="https://www.youtube.com/watch?v=u99wAoBjDvQ&list=PLQMqUlV2_B8ngL_PaT9UFsd0-PvnrpZGC&index=3"
+                        href={`https://www.english-grammar-lessons.co.uk/idioms/${slug}.html`}
                         target="_blank"
                         rel="noreferrer"
                     >
                         <CardContent>
-                            <Typography fontWeight={700}>Base video</Typography>
+                            <Typography fontWeight={700}>Idioms</Typography>
                             <Typography
                                 variant="body2"
                                 color="text.secondary"
                             >
-                                Find the word in transcript
+                                English Grammar Lessons · idioms page
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+                <Card>
+                    <CardActionArea
+                        href={`https://www.ldoceonline.com/dictionary/${encoded}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>
+                                Longman (LDOCE)
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Definitions, examples, collocations
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+                <Card>
+                    <CardActionArea
+                        href={`https://www.merriam-webster.com/dictionary/${encoded}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>
+                                Merriam-Webster
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Definitions, usage, examples
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                <Card>
+                    <CardActionArea
+                        href={`https://en.wiktionary.org/wiki/${encoded}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>Wiktionary</Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Etymology, forms, translations
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+                <Card>
+                    <CardActionArea
+                        href={`https://speechyard.com/ru/vocabulary/w/${encoded}/`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>Speechyard</Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Videos with real usage examples
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+                <Card>
+                    <CardActionArea
+                        href={`https://www.reverso.net/text-translation#sl=eng&tl=rus&text=${encoded}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>Reverso</Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Translate text
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                <Card>
+                    <CardActionArea
+                        href={`https://context.reverso.net/translation/english-russian/${encoded}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>
+                                Reverso Context
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Examples in real contexts
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+                <Card>
+                    <CardActionArea
+                        href="https://webcammictest.com/ru/mic/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent>
+                            <Typography fontWeight={700}>
+                                Microphone Test
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Hear yourself pronounce the word
                             </Typography>
                         </CardContent>
                     </CardActionArea>

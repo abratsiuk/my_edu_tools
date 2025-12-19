@@ -3,6 +3,9 @@ import Layout from './layout/Layout';
 import WordPage from './pages/WordPage';
 import TimerPage from './pages/TimerPage';
 import NotFoundPage from './pages/NotFoundPage';
+import TestsPage from './pages/TestsPage';
+import CoursesPage from './pages/CoursesPage';
+import BooksPage from './pages/BooksPage';
 
 export default function App() {
     return (
@@ -24,6 +27,18 @@ export default function App() {
                 <Route
                     path="/word"
                     element={<WordPage />}
+                />
+                <Route
+                    path="/courses"
+                    element={<CoursesPage />}
+                />
+                <Route
+                    path="/tests"
+                    element={<TestsPage />}
+                />
+                <Route
+                    path="/books"
+                    element={<BooksPage />}
                 />
                 <Route
                     path="/404"

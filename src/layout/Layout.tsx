@@ -18,8 +18,17 @@ function getTabValue(pathname: string): string {
     if (pathname.startsWith('/timer')) {
         return '/timer';
     }
+    if (pathname.startsWith('/courses')) {
+        return '/courses';
+    }
+    if (pathname.startsWith('/books')) {
+        return '/books';
+    }
+    if (pathname.startsWith('/tests')) {
+        return '/tests';
+    }
     if (pathname === '/') {
-        return '/';
+        return '/timer';
     }
     return false as unknown as string;
 }
@@ -85,6 +94,18 @@ export default function Layout() {
                         <Tab
                             value="/word"
                             label="word"
+                        />
+                        <Tab
+                            value="/courses"
+                            label="courses"
+                        />
+                        <Tab
+                            value="/tests"
+                            label="tests"
+                        />
+                        <Tab
+                            value="/books"
+                            label="books"
                         />
                     </Tabs>
                 </Toolbar>
