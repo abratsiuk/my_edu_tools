@@ -19,6 +19,11 @@ const cards: LinkCard[] = [
         href: 'https://www.instagram.com/alliengll/',
     },
     {
+        title: 'Alina Cher — English Learning (YouTube)',
+        subtitle: 'Teaching methods, explanations, guidance',
+        href: 'https://www.youtube.com/@AlinaCherBlog',
+    },
+    {
         title: 'Where to Learn English',
         subtitle: 'Alina · Curated resources (Notion)',
         href: 'https://battle-college-0d5.notion.site/f631ba49302a49cb8bb4e92e7c16a5f7',
@@ -35,8 +40,8 @@ const cards: LinkCard[] = [
     },
     {
         title: 'Visson — Русские проблемы в английской речи',
-        subtitle: 'FB2 (public/books)',
-        href: fileHref('visson-russkie-problemy.fb2'),
+        subtitle: 'PDF (public/books)',
+        href: fileHref('visson-russkie-problemy.pdf'),
     },
     {
         title: 'Wise Eric — Effectively Learning to Code (2024)',
