@@ -69,11 +69,6 @@ const cards: LinkCard[] = [
         href: 'https://www.w3schools.com/cs/index.php',
     },
     {
-        title: 'Advanced C# Programming',
-        subtitle: 'YouTube · Advanced level course',
-        href: 'https://www.youtube.com/watch?v=YT8s-90oDC0',
-    },
-    {
         title: 'Angular Tutorial (W3Schools)',
         subtitle: 'Angular fundamentals',
         href: 'https://www.w3schools.com/angular/default.asp',

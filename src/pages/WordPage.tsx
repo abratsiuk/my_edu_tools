@@ -355,6 +355,24 @@ export default function WordPage() {
                         </CardContent>
                     </CardActionArea>
                 </Card>
+
+                <Card>
+                    <CardActionArea
+                        href="https://grok.com/share/c2hhcmQtNA_c7d600b5-aec0-44a9-91a2-328913e45642"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <CardContent sx={{ textAlign: 'center' }}>
+                            <Typography fontWeight={700}>Grok</Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                            >
+                                Mnemonic methodology
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
             </Box>
         </Stack>
     );

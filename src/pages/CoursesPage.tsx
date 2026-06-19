@@ -1,15 +1,66 @@
-import {
-    Card,
-    CardActionArea,
-    CardContent,
-    Stack,
-    Typography,
-    Box,
-} from '@mui/material';
+import {Box, Card, CardActionArea, CardContent, Stack, Typography,} from '@mui/material';
 
-type LinkCard = { title: string; subtitle?: string; href: string };
+type Section = {
+    title?: string;
+    description?: string;
+    items: string[];
+};
+type LinkCard = {
+    title: string;
+    subtitle?: string;
+    href: string;
+    sections?: Section[]
+};
+
+const shadowingSection: Section = {
+    title: 'Делать shadowing!',
+    description:
+        'Искин: И да, Александр Петрович, для Вашего уровня Intermediate сейчас очень полезно не просто слушать, а делать shadowing — это реально начинает перестраивать произношение:',
+    items: [
+        '1. 10–20 секунд',
+        '2. пауза',
+        '3. повторять вслух, копируя ритм',
+        '4. записывать себя',
+    ],
+};
 
 const cards: LinkCard[] = [
+    {
+        title: 'IAmTimCorey',
+        subtitle: 'Neutral American accent',
+        href: 'https://www.youtube.com/@IAmTimCorey',
+        sections: [
+            {
+                title: 'Начать можно с',
+                items: [
+                    'ASP.NET Core Crash Course',
+                    'Build a Web API in ASP.NET Core',
+                    'Dependency Injection in C#',
+                ],
+            },
+            shadowingSection,
+        ],
+    },
+    {
+        title: 'Web Dev Simplified',
+        subtitle: 'Neutral American accent',
+        href: 'https://www.youtube.com/@WebDevSimplified',
+        sections: [
+            {
+                title: 'Темы',
+                items: [
+                    'React',
+                    'JavaScript',
+                    'TypeScript',
+                    'CSS',
+                    'Flexbox/Grid',
+                    'Hooks',
+                    'Frontend architecture',
+                ],
+            },
+            shadowingSection,
+        ],
+    },
     {
         title: 'Слепой набор - 2: основная позиция пальцев',
         subtitle: 'Keyboard mastery tips (Portnov)',
@@ -140,11 +191,11 @@ const cards: LinkCard[] = [
 export default function CoursesPage() {
     return (
         <Stack spacing={2}>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
+            <Box sx={{display: 'flex', flexWrap: 'wrap', gap: 2}}>
                 {cards.map((c) => (
                     <Card
                         key={c.href}
-                        sx={{ width: { xs: '100%', sm: 320 } }}
+                        sx={{width: {xs: '100%', sm: 320}}}
                     >
                         <CardActionArea
                             href={c.href}
@@ -163,6 +214,45 @@ export default function CoursesPage() {
                                         {c.subtitle}
                                     </Typography>
                                 ) : null}
+                                {c.sections?.map((section, sectionIndex) => (
+                                    <Box
+                                        key={sectionIndex}
+                                        sx={{mt: 2, textAlign: 'left'}}
+                                    >
+                                        {section.title ? (
+                                            <Typography
+                                                variant="subtitle2"
+                                                fontWeight={700}
+                                            >
+                                                {section.title}
+                                            </Typography>
+                                        ) : null}
+
+                                        {section.description ? (
+                                            <Typography
+                                                variant="body2"
+                                                color="text.secondary"
+                                                sx={{mt: 0.5}}
+                                            >
+                                                {section.description}
+                                            </Typography>
+                                        ) : null}
+
+                                        <Stack
+                                            spacing={0.5}
+                                            sx={{mt: 1}}
+                                        >
+                                            {section.items.map((item, itemIndex) => (
+                                                <Typography
+                                                    key={itemIndex}
+                                                    variant="body2"
+                                                >
+                                                    {item}
+                                                </Typography>
+                                            ))}
+                                        </Stack>
+                                    </Box>
+                                ))}
                             </CardContent>
                         </CardActionArea>
                     </Card>

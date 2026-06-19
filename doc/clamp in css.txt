@@ -1,0 +1,38 @@
+scale ; skeɪl ; change size proportionally ; The heading ____s smoothly on different screens. ; масштабироваться
+shrink ; ʃrɪŋk ; become smaller in size ; The container ____s on mobile devices. ; уменьшаться
+grow ; ɡroʊ ; increase in size gradually ; The sidebar can ____ on large screens. ; увеличиваться
+limit ; ˈlɪmɪt ; set a boundary that cannot be passed ; Clamp helps ____ the font size. ; ограничивать
+combine ; kəmˈbaɪn ; use things together as one ; We ____ fixed and flexible units. ; сочетать
+return ; rɪˈtɝːn ; produce a value as a result ; The function ____s the smaller value. ; возвращать
+avoid ; əˈvɔɪd ; keep away from something harmful ; We ____ using pixels for fonts. ; избегать
+exceed ; ɪkˈsiːd ; go beyond an allowed size ; The width never ____s the screen. ; превышать
+enforce ; ɪnˈfɔːrs ; make a rule strictly apply ; Max can ____ a minimum width. ; принудительно применять
+respond ; rɪˈspɑːnd ; react to a change ; The font size ____s to screen width. ; реагировать
+respect ; rɪˈspɛkt ; follow rules or user settings ; Rem units ____ user zoom. ; учитывать
+prevent ; prɪˈvɛnt ; stop something from happening ; Clamp ____s extreme font sizes. ; предотвращать
+define ; dɪˈfaɪn ; clearly set a value or rule ; Clamp ____s min, max, and fluid sizes. ; определять
+depend ; dɪˈpɛnd ; be controlled by something else ; Font size may ____ on viewport width. ; зависеть
+fit ; fɪt ; be the correct size for a space ; The layout ____s small screens better. ; подходить
+Responsive ; rɪˈspɑːnsɪv ; able to adapt to different screen sizes ; This layout is ____ across devices. ; адаптивный
+stay ; steɪ ; remain in the same state or position ; The container should ____ within the screen width. ; оставаться
+wide ; waɪd ; having a large horizontal size ; The element becomes too ____ on desktop screens. ; широкий
+large ; lɑːrdʒ ; big in size or scale ; Headings look ____ on ultra-wide monitors. ; большой
+shrink ; ʃrɪŋk ; become smaller in size ; The font should ____ on small screens. ; уменьшаться
+smaller ; ˈsmɔːlər ; having less size compared to something else ; The function selects the ____ value. ; меньший
+exceeds ; ɪkˈsiːdz ; goes beyond an allowed limit ; The width never ____ the screen size. ; превышает
+viewport ; ˈvjuːˌpɔːrt ; visible area of the browser window ; VW units depend on the ____. ; область просмотра
+opposite ; ˈɑːpəzɪt ; completely different in direction or effect ; Max works as the ____ of min. ; противоположный
+enforce ; ɪnˈfɔːrs ; make a rule strictly apply ; This function ____s a minimum size. ; принудительно применять
+grow ; ɡroʊ ; increase in size gradually ; The element can ____ on larger screens. ; увеличиваться
+rule of thumb ; ruːl əv θʌm ; practical general guideline ; A useful ____ helps choose min or max. ; практическое правило
+clamp ; klæmp ; limit a value between two boundaries ; We use ____ for scalable font sizes. ; ограничивать (clamp)
+following ; ˈfɑːloʊɪŋ ; coming after or obeying a value ; The size keeps ____ the fluid value. ; следующий / придерживающийся
+preferred ; prɪˈfɝːd ; chosen as the best option ; The middle value is the ____ one. ; предпочтительный
+fluid ; ˈfluːɪd ; able to change smoothly ; Viewport units create ____ scaling. ; плавный
+common use case ; ˈkɑːmən juːs keɪs ; typical situation where something is applied ; Fonts are a ____ for clamp. ; типичный сценарий использования
+alone ; əˈloʊn ; without anything else ; VW units ____ cause accessibility issues. ; сами по себе
+constraints ; kənˈstreɪnts ; fixed limits or boundaries ; Clamp works with three ____. ; ограничения
+still ; stɪl ; continuing to happen despite changes ; The text ____ scales with zoom. ; всё ещё
+respond ; rɪˈspɑːnd ; react to a change ; Good typography ____s to screen size. ; реагировать
+cleanly ; ˈkliːnli ; in a simple and clear way ; This problem is solved ____ without queries. ; аккуратно
+responsively ; rɪˈspɑːnsɪvli ; in a way that adapts to screens ; Elements behave ____ using clamp. ; адаптивно
